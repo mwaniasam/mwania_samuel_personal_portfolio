@@ -1,0 +1,134 @@
+/* Main footer container */
+.footer {
+    background-color: black;
+    color: #cbcbcb;
+    font-family: "Ubuntu Condensed", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 350px;
+    margin-top: -5px;
+}
+
+/* Logo inside the footer */
+.footer > .logo-footer img {
+    width: 150px;
+    height: auto;
+    opacity: 0.5; /* Reduces opacity for a faded effect */
+}
+
+/* Phone and email styling inside the footer */
+.footer > .footer-phone-email span {
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 1em;
+    letter-spacing: 2px; /* Adds spacing between letters */
+}
+
+/* Email link styling */
+.footer > .footer-phone-email > .email {
+    font-size: 0.8em;
+    color: royalblue;
+}
+
+/* Links wrapper */
+.footer > .links-wrapper {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 400px;
+}
+
+/* Social media icons wrapper with flex layout */
+.footer > .social-media-icons-wrapper {
+    margin-top: 8px;
+    margin-bottom: 40px;
+    width: 300px;
+    display: flex;
+    justify-content: space-around; /* Evenly spaces the icons */
+}
+
+/* Social media icon styling */
+.footer > .social-media-icons-wrapper a {
+    font-size: 1.5em;
+    color: #cbcbcb;
+    transition: 0.5s;
+}
+
+/* Hover effect for social media icons */
+.footer > .social-media-icons-wrapper a:hover {
+    color: royalblue;
+}
+
+/* Copyright text at the bottom */
+.footer > .copyright-wrapper {
+    margin-bottom: 45px;
+    font-size: 0.7em;
+    color: #7fff00;
+}
+
+/* Media Queries for Responsiveness */
+
+/* Tablet screens: max-width 1024px */
+@media (max-width: 1024px) {
+    .footer {
+        height: auto; /* Let height adjust based on content */
+        padding: 20px; /* Add padding for spacing */
+    }
+
+    /* Reduce logo size for smaller screens */
+    .footer > .logo-footer img {
+        width: 120px;
+    }
+
+    /* Adjust links and social media icon size */
+    .footer > .links-wrapper {
+        width: 350px;
+    }
+
+    .footer > .social-media-icons-wrapper a {
+        font-size: 1.3em;
+    }
+}
+
+/* Mobile screens: max-width 768px */
+@media (max-width: 768px) {
+    .footer {
+        height: auto; /* Adjust height for content */
+        padding: 10px; /* Add more compact padding */
+    }
+
+    /* Reduce logo size further for mobile */
+    .footer > .logo-footer img {
+        width: 100px;
+    }
+
+    /* Adjust spacing for phone and email */
+    .footer > .footer-phone-email span {
+        margin-left: 5px;
+        margin-right: 5px;
+        font-size: 0.9em; /* Reduce font size */
+    }
+
+    /* Stack social media icons vertically */
+    .footer > .social-media-icons-wrapper {
+        width: 100%;
+        justify-content: space-evenly; /* Ensure even spacing */
+    }
+
+    .footer > .social-media-icons-wrapper a {
+        font-size: 1.2em; /* Make icons smaller for mobile */
+    }
+
+    /* Adjust links width and font size */
+    .footer > .links-wrapper {
+        width: 100%;
+        font-size: 0.9em;
+    }
+
+    /* Make copyright text more compact */
+    .footer > .copyright-wrapper {
+        font-size: 0.6em;
+        margin-bottom: 30px;
+    }
+}

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Samuel Mwania</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles/nav.css">
+    <link rel="stylesheet" href="styles/contact.css">
+    <link rel="stylesheet" href="styles/footer.css">
+</head>
+<body>
+    <header>
+
+        <div class="my">
+            CONTACT-ME
+        </div>
+
+        <div class="navigation-wrapper">
+            <div class="center-column"> 
+                <div class="links-wrapper">
+                    <div class="nav-link">
+                        <a href="index.html">Home</a>
+                    </div>
+                    <div class="nav-link">
+                        <a href="about.html">About</a>
+                    </div>
+                    <div class="nav-link">
+                        <a href="contact.html">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+         
+    <div class="page-container">
+        <div class="contact-grid-wrapper">
+            <div class="company-metadata-sidebar-wrapper">
+                <div class="logo">
+                    <img src="images/smn-tech-company.svg" alt="Logo">
+                </div>
+
+                <div class="individual-details-wrapper">
+                    <i class="fa-solid fa-user-tie"></i>
+                    <div>
+                        SAMUEL MWANIA<br>
+                        STUDENT ALU                      
+                    </div>
+                </div>
+
+                <div class="individual-details-wrapper">
+                    <i class="fas fa-phone-volume"></i>
+                    <div>
+                        +254706203624
+                    </div>
+                </div>
+
+                <div class="individual-details-wrapper">
+                    <i class="fa-solid fa-envelope"></i>
+                    <div>
+                        mwaniasamuel100@gmail.com
+                    </div>
+                </div>
+            </div>
+
+            <div class="form">
+                <div class="form-group">
+                    <input type="text" id="fullName" placeholder="Your name">
+                    <label for="fullName">Your name</label>
+                </div>
+
+                <div class="form-group">
+                    <input type="email" id="email" placeholder="Your email">
+                    <label for="email">Your email</label>
+                </div>
+
+                <div class="form-group">
+                    <textarea name="message" id="message" placeholder="Message"></textarea>
+                    <label for="message">Message</label>
+                </div>
+
+                <div class="spacer10"></div>
+
+                <div class="centered-btn-wrapper">
+                    <button type="submit" class="btn">Send</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="spacer100"></div>
+
+    <footer>
+        <div class="footer">
+            <div class="logo-footer">
+                <img src="images/smn-tech-company.svg" alt="Logo">
+            </div> 
+    
+            <div class="footer-phone-email">
+                <span class="phone">
+                    +254706203624
+                </span>
+                <span class="email">
+                    mwaniasamuel100@gmail.com
+                </span>
+            </div>
+    
+            <div class="links-wrapper">               
+                <div class="nav-link">
+                    <a href="index.html">Home</a>
+                </div>            
+                <div class="nav-link">
+                    <a href="about.html">About</a>
+                </div>               
+                <div class="nav-link">
+                    <a href="contact.html">Contact</a>
+                </div>
+            </div>
+    
+            <div class="social-media-icons-wrapper">
+                <a href="https://www.instagram.com/mwan_i.a?igsh=b2l4eHk0bzZzOTJk" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/samuel-mwania-48bba6296" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="#">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://github.com/mwaniasamuel" target="_blank">
+                    <i class="fa-brands fa-square-github"></i>
+                </a>
+            </div>
+    
+            <div class="copyright-wrapper">
+                &copy; 2024 MWANIA SAMUEL &#124; All rights reserved
+            </div>
+        </div>
+    </footer>
+
+    <script>
+    document.querySelector('.btn').addEventListener('click', function(event) {
+        // Prevent the form from submitting immediately
+        event.preventDefault();
+
+        // Get form values
+        let name = document.getElementById('fullName').value.trim();
+        let email = document.getElementById('email').value.trim();
+        let message = document.getElementById('message').value.trim();
+
+        // Validate Name
+        if (name === "") {
+            alert("Please enter your name.");
+            return;
+        }
+
+        // Validate Email
+        if (email === "" || !validateEmail(email)) {
+            alert("Please enter a valid email address.");
+            return;
+        }
+
+        // Validate Message
+        if (message === "") {
+            alert("Please enter your message.");
+            return;
+        }
+
+        // If validation passes, submit the form or display success message
+        alert("Form submitted successfully!");
+
+        // Optionally, you can submit the form here
+        // document.querySelector('form').submit();
+    });
+
+    // Email validation function using regular expressions
+    function validateEmail(email) {
+        const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return emailPattern.test(email);
+    }
+</script>
+</body>
+</html>

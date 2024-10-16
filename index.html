@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mwania Samuel portfolio</title>
+
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
+    <link rel="stylesheet" href="styles/nav.css">
+    <link rel="stylesheet" href="styles/homepage.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <!-- Add animation CSS library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+<body>
+
+    <!-- HEADER SECTION -->
+    <header>
+        <div class="my">
+            MWANIA-SAMUEL-PORTFOLIO
+        </div>
+
+        <div class="navigation-wrapper">
+            <div class="center-column"> 
+                <div class="links-wrapper">
+                    <div class="nav-link">
+                        <a href="index.html">Home</a>
+                    </div>
+                    <div class="nav-link">
+                        <a href="about.html">About</a>
+                    </div>
+                    <div class="nav-link">
+                        <a href="contact.html">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </header>
+    
+    <!-- HERO SECTION -->
+    <div class="hero-section">
+        <div class="top-heading">
+            <h1 class="animate__animated animate__fadeInDown">I AM AN ASPIRING SOFTWARE DEVELOPER</h1>
+        </div>
+
+        <div class="bottom-heading">
+            <h3 class="animate__animated animate__fadeInUp">Coding Africa, tech-GURU</h3>
+        </div>   
+    </div>
+    
+    <!-- FEATURES SECTION -->
+    <div class="features-section">
+        <div class="columns-wrapper">
+            <div class="column">
+                <i class="fa-solid fa-user-tie"></i>
+                <p>Best!</p>
+                
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+            </div>
+
+            <div class="column">
+                <i class="fa-solid fa-globe"></i>
+                <p>Connect!</p>
+                
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+            </div>
+
+            <div class="column">
+                <i class="fa-brands fa-hire-a-helper"></i>
+                <p>Hire me</p>
+                
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- CONTAINER (Interactive Gallery, Services, Partnerships) -->
+    <div class="container">
+        <div class="box" id="gallery">
+            <div class="content">
+                <h2>Gallery</h2> <br>
+                <p>Check out my latest projects!</p>
+            </div>
+        </div>
+        <div class="box" id="services">
+            <div class="content">
+                <h2>Services</h2> <br>
+                <p>Explore the services I offer.</p>
+            </div>
+        </div>
+        <div class="box" id="partnerships">
+            <div class="content">
+                <h2>Partnerships</h2> <br>
+                <p>Learn about our partnership opportunities.</p>
+            </div>
+        </div>
+    </div>              
+    
+    <!-- VIDEO SECTION -->
+    <div class="video-wrapper">
+        <video autoplay loop muted controls>
+            <source src="videos/tech.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <!-- FOOTER SECTION -->
+    <div class="footer">
+        <div class="logo-footer">
+            <img src="images/smn-tech-company.svg" alt="Logo">
+        </div> 
+
+        <div class="footer-phone-email">
+            <span class="phone">
+                +254706203624
+            </span>
+
+            <span class="email">
+                mwaniasamuel100@gmail.com
+            </span>
+        </div>
+        <div class="links-wrapper">
+            <div class="nav-link">
+                <a href="index.html">Home</a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="about.html">About</a>
+            </div>   
+            
+            <div class="nav-link">
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+
+        <div class="social-media-icons-wrapper">
+            <a href="https://www.instagram.com/mwan_i.a?igsh=b2l4eHk0bzZzOTJk" target="_blank">
+                <i class="fab fa-instagram"></i>
+            </a>
+
+            <a href="https://www.linkedin.com/in/samuel-mwania-48bba6296" target="_blank">
+                <i class="fab fa-linkedin"></i>
+            </a>
+
+            <a href="#">
+                <i class="fab fa-twitter"></i>
+            </a>
+
+            <a href="https://github.com/mwaniasam" target="_blank">
+                <i class="fa-brands fa-github"></i>
+            </a>
+        </div>
+
+        <div class="copyright-wrapper">
+            &copy; 2024 Mwania Samuel ALU &#124; All rights reserved
+        </div>
+    </div>
+
+    <!-- JS SECTION -->
+    <script>
+    
+
+        // Add animation on scroll
+        window.addEventListener('scroll', function() {
+            let featuresSection = document.querySelector('.features-section');
+            let position = featuresSection.getBoundingClientRect().top;
+            let screenPosition = window.innerHeight / 1.3;
+            if (position < screenPosition) {
+                featuresSection.classList.add('animate__animated', 'animate__fadeInUp');
+            }
+        });
+    </script>
+</body>
+</html>

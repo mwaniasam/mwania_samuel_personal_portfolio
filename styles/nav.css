@@ -1,0 +1,92 @@
+.my{
+    background-color: aqua;
+    width: 100%;
+}
+
+/* Main wrapper for the navigation */
+.navigation-wrapper {
+    width: 100%;
+    height: auto;
+    background-position: 65% 8rem;
+    background-size: 90rem auto;
+    background-color: #11112b;
+    color: #cbcbcb;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 120px 200px;
+    /* Flexbox will help adjust the layout more easily */
+}
+
+/* Grid layout for the center column */
+.navigation-wrapper > .center-column {
+    display: flex;
+    align-items:center;
+    justify-content: space-around;
+    width: 100%;
+    margin-right: 28rem;
+
+}
+
+/* Navigation links wrapper */
+.links-wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+}
+
+/* Individual navigation link styling */
+.links-wrapper > .nav-link {
+    width: 120px;
+    text-align: center;
+    font-size: 100%;
+}
+
+/* Styling for links */
+.links-wrapper > .nav-link a {
+    font-family: "Ubuntu Condensed", sans-serif;
+    color: #cbcbcb;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+/* Hover effect for navigation links */
+.links-wrapper > .nav-link a:hover {
+    color: royalblue;
+    letter-spacing: 2px;
+}
+
+
+/* Mobile screens: max-width 768px */
+@media (max-width: 768px) {
+    .navigation-wrapper {
+        flex-direction: column; /* Stack everything vertically */
+        padding: 20px;
+    }
+
+    /* Reduce padding for small devices */
+    .navigation-wrapper > .left-column-wrapper {
+        margin-right: 0;
+    }
+
+    /* Adjust image size */
+    .navigation-wrapper > .center-column > .banner-image img {
+        width: 150px;
+    }
+
+    /* Links go full width */
+    .links-wrapper {
+        flex-direction: column;
+    }
+
+    .links-wrapper > .nav-link {
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    /* Reduce social media icon size */
+    .navigation-wrapper > .right-column > .social-media-icons-wrapper > a {
+        font-size: 1.2em;
+    }
+}

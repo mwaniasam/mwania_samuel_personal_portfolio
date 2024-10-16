@@ -1,0 +1,70 @@
+/* About section container */
+.about-section {
+    background-color: #f0f0f0; /* Light background color */
+    color: #11122b; /* Dark text color */
+    padding: 40px 20px; /* Padding for spacing */
+    display: flex; /* Flexbox for layout */
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center items */
+}
+
+/* Title styling for the About section */
+.about-section h2 {
+    font-size: 2.5em; /* Larger font size for title */
+    margin-bottom: 20px; /* Space below title */
+}
+
+/* Content area of the About section */
+.about-section p {
+    font-size: 1.2em; /* Base font size for paragraph text */
+    line-height: 1.6; /* Line height for readability */
+    text-align: center; /* Centered text */
+    max-width: 800px; /* Maximum width for paragraphs */
+}
+
+/* Image styling within the About section */
+.about-section img {
+    width: 100%; /* Full width for responsive images */
+    max-width: 500px; /* Limit max width for larger screens */
+    border-radius: 10px; /* Optional: rounded corners */
+}
+
+/* Media Queries for Responsiveness */
+
+/* Tablet screens: max-width 1024px */
+@media (max-width: 1024px) {
+    .about-section {
+        padding: 30px 10px; /* Adjust padding for tablets */
+    }
+
+    .about-section h2 {
+        font-size: 2em; /* Reduce title size */
+    }
+
+    .about-section p {
+        font-size: 1.1em; /* Slightly reduce paragraph size */
+    }
+
+    .about-section img {
+        max-width: 80%; /* Increase image width proportionally */
+    }
+}
+
+/* Mobile screens: max-width 768px */
+@media (max-width: 768px) {
+    .about-section {
+        padding: 20px 5px; /* Compact padding for mobile */
+    }
+
+    .about-section h2 {
+        font-size: 1.5em; /* Further reduce title size for mobile */
+    }
+
+    .about-section p {
+        font-size: 1em; /* Reduce paragraph font size */
+    }
+
+    .about-section img {
+        max-width: 100%; /* Image fully responsive */
+    }
+}
