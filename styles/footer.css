@@ -96,6 +96,7 @@
     .footer {
         height: auto; /* Adjust height for content */
         padding: 10px; /* Add more compact padding */
+        width: 94.8%;
     }
 
     /* Reduce logo size further for mobile */
